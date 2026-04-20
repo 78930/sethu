@@ -1,0 +1,105 @@
+import { HYDERABAD_INDUSTRIAL_AREAS } from '@/constants/areas';
+import type { Application, Job, Profile } from '@/types';
+
+const area = (name: string) => HYDERABAD_INDUSTRIAL_AREAS.find((item) => item.name === name);
+
+export const demoWorkerProfile: Profile = {
+  name: 'Vikram Kumar',
+  email: 'worker@sethu.app',
+  userType: 'worker',
+  roles: ['Production Supervisor', 'Quality Engineer'],
+  skills: ['5S', 'SOP', 'Line balancing', 'Quality inspection', 'MS Excel'],
+  certifications: ['ITI Mechanical', 'Safety Basics'],
+  areas: ['Balanagar', 'Jeedimetla', 'Patancheru'],
+  experienceYears: 4,
+  shiftPreference: ['Day', 'Rotational'],
+  salaryPreference: { min: 22000, max: 32000 },
+  availability: 'Immediate',
+  verified: true,
+  location: {
+    type: 'Point',
+    coordinates: [78.4867, 17.385],
+  },
+};
+
+export const demoJobs: Job[] = [
+  {
+    _id: 'job-1',
+    title: 'Production Supervisor',
+    companyName: 'Hyderabad Precision Castings',
+    area: 'Balanagar',
+    reqSkills: ['5S', 'Line balancing', 'SOP'],
+    preferredRoles: ['Production Supervisor'],
+    shift: 'Day',
+    payMin: 28000,
+    payMax: 36000,
+    openings: 3,
+    description: 'Lead a 45-member production line, drive daily output, and enforce SOP compliance.',
+    fitScore: 92,
+    location: { type: 'Point', coordinates: area('Balanagar')?.coordinates ?? [78.4488, 17.4702] },
+  },
+  {
+    _id: 'job-2',
+    title: 'CNC Operator',
+    companyName: 'AeroFab Components',
+    area: 'Adibatla',
+    reqSkills: ['CNC setup', 'Blueprint reading', 'Vernier'],
+    preferredRoles: ['CNC Operator'],
+    shift: 'Rotational',
+    payMin: 24000,
+    payMax: 34000,
+    openings: 5,
+    description: 'Operate CNC/VMC machines for aerospace-grade parts with strict tolerance control.',
+    fitScore: 74,
+    location: { type: 'Point', coordinates: area('Adibatla')?.coordinates ?? [78.6811, 17.1952] },
+  },
+  {
+    _id: 'job-3',
+    title: 'Quality Engineer',
+    companyName: 'Genome Devices Pvt Ltd',
+    area: 'Genome Valley',
+    reqSkills: ['CAPA', 'Documentation', 'Quality inspection'],
+    preferredRoles: ['Quality Engineer'],
+    shift: 'General',
+    payMin: 30000,
+    payMax: 42000,
+    openings: 2,
+    description: 'Own inspection reports, CAPA tracking, and audit readiness across the line.',
+    fitScore: 89,
+    location: { type: 'Point', coordinates: area('Genome Valley')?.coordinates ?? [78.6138, 17.6026] },
+  },
+  {
+    _id: 'job-4',
+    title: 'Maintenance Technician',
+    companyName: 'Bollaram Pharma Systems',
+    area: 'IDA Bollaram',
+    reqSkills: ['Breakdown maintenance', 'Preventive maintenance', 'Electrical basics'],
+    preferredRoles: ['Maintenance Technician'],
+    shift: 'Night',
+    payMin: 23000,
+    payMax: 31000,
+    openings: 4,
+    description: 'Handle reactive and preventive maintenance for production utilities and machines.',
+    fitScore: 78,
+    location: { type: 'Point', coordinates: area('IDA Bollaram')?.coordinates ?? [78.3695, 17.5581] },
+  },
+];
+
+export const demoApplications: Application[] = [
+  {
+    _id: 'app-1',
+    jobId: 'job-1',
+    status: 'Under Review',
+    fitScore: 92,
+    createdAt: new Date().toISOString(),
+    job: demoJobs[0],
+  },
+  {
+    _id: 'app-2',
+    jobId: 'job-3',
+    status: 'Applied',
+    fitScore: 89,
+    createdAt: new Date().toISOString(),
+    job: demoJobs[2],
+  },
+];

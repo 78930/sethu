@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Sethu",
+    "slug": "sethu",
+    "scheme": "sethu",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "entryPoint": "./app/_layout.tsx",
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "brandName": "Sethu",
+      "tagline": "Connecting Hyderabad Factories to Top Talent"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+export const INDUSTRIAL_ROLES = [
+  'Plant Head', 'Factory Manager', 'Operations Manager', 'Production Manager', 'HR Manager', 'Maintenance Manager',
+  'Quality Manager', 'EHS Manager', 'Production Supervisor', 'Shift Incharge', 'Line Leader', 'Machine Operator',
+  'CNC Operator', 'VMC Operator', 'Lathe Operator', 'Press Operator', 'Injection Molding Operator', 'Packaging Operator',
+  'Assembler', 'Welder', 'Fabricator', 'Mechanical Engineer', 'Electrical Engineer', 'Electronics Engineer',
+  'Industrial Engineer', 'Process Engineer', 'Automation Engineer', 'PLC Programmer', 'Instrumentation Engineer',
+  'Utility Engineer', 'Design Engineer', 'CAD Engineer', 'R&D Engineer', 'Product Development Engineer',
+  'Tool Room Engineer', 'Quality Engineer', 'Quality Inspector', 'QA Executive', 'QC Technician',
+  'Supplier Quality Engineer', 'Maintenance Technician', 'Mechanical Maintenance Technician',
+  'Electrical Maintenance Technician', 'HVAC Technician', 'Calibration Technician', 'Breakdown Technician',
+  'Store Executive', 'Warehouse Supervisor', 'Procurement Executive', 'Logistics Coordinator', 'Dispatch Executive',
+  'Inventory Controller', 'Production Planner', 'PPC Executive', 'ERP Executive', 'SAP MM Executive',
+  'Scheduling Coordinator', 'Fitter', 'Turner', 'Machinist', 'CNC Programmer', 'TIG Welder', 'MIG Welder',
+  'Electrician', 'Plumber', 'Forklift Operator', 'Safety Officer', 'Compliance Executive', 'Security Supervisor',
+  'Admin Executive', 'Documentation Executive', 'Housekeeping Supervisor'
+] as const;

@@ -1,0 +1,43 @@
+{
+  "name": "sethu-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "dev": "expo start --clear",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "build:web": "expo export --platform web",
+    "lint": "eslint . --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^14.0.4",
+    "@hookform/resolvers": "^3.10.0",
+    "@react-native-async-storage/async-storage": "^2.1.2",
+    "axios": "^1.8.4",
+    "date-fns": "^4.1.0",
+    "expo": "^55.0.15",
+    "expo-router": "^55.0.12",
+    "expo-status-bar": "~2.2.3",
+    "lucide-react-native": "^0.511.0",
+    "nativewind": "^4.1.23",
+    "react": "^19.0.0",
+    "react-hook-form": "^7.54.2",
+    "react-native": "^0.79.0",
+    "react-native-maps": "1.20.1",
+    "react-native-safe-area-context": "5.4.0",
+    "react-native-screens": "~4.10.0",
+    "react-native-svg": "15.11.2",
+    "react-native-web": "^0.20.0",
+    "socket.io-client": "^4.8.1",
+    "tailwindcss": "^3.4.17",
+    "zod": "^3.24.2",
+    "zustand": "^5.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@types/react": "~19.2.10",
+    "typescript": "~5.8.3"
+  }
+}

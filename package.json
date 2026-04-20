@@ -1,0 +1,22 @@
+{
+  "name": "sethu-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "mobile",
+    "backend"
+  ],
+  "scripts": {
+    "dev:mobile": "npm --workspace mobile run dev",
+    "dev:backend": "npm --workspace backend run dev",
+    "build:mobile:web": "npm --workspace mobile run build:web",
+    "build:backend": "npm --workspace backend run build",
+    "seed": "npm --workspace backend run seed",
+    "lint": "npm --workspace mobile run lint && npm --workspace backend run lint"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.29.0",
+    "@typescript-eslint/parser": "^8.29.0",
+    "eslint": "^9.23.0"
+  }
+}
